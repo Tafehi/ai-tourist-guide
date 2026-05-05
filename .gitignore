@@ -5,7 +5,7 @@ __pycache__/
 
 # C extensions
 *.so
-
+*.idea
 # Distribution / packaging
 .Python
 build/
@@ -216,3 +216,33 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# === Xcode / iOS ===
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+xcuserdata/
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.xccheckout
+*.moved-aside
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+!default.pbxuser
+!default.mode1v3
+!default.mode2v3
+!default.perspectivev3
+*.swp
+*~.nib
+
+# === Swift Package Manager ===
+.build/
+Package.resolved
+
+# === macOS ===
+.DS_Store
