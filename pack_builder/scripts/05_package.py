@@ -20,6 +20,13 @@ def main():
     output_file = output_dir / f"{args.city}_v{args.version}.zip"
 
     print(f"Packaging {args.city} v{args.version} -> {output_file}")
+
+    with zipfile.ZipFile(output_file, "w", zipfile.ZIP_DEFLATED) as zf:
+        for file_path in data_dir.rglob("*"):
+            if file_path.is_file():
+                zf.write(file_path, file_path.relative_to(data_dir))
+
+    print(f"Done: {output_file} ({output_file.stat().st_size} bytes)")
     raise NotImplementedError
 
 
