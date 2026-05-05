@@ -1,7 +1,6 @@
 """Step 3: Generate explanation text for each POI using Claude."""
 
 import argparse
-import json
 from pathlib import Path
 
 from dotenv import load_dotenv
