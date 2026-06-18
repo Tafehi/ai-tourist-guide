@@ -2,6 +2,22 @@
 
 An AI-powered tour guide app that turns sightseeing into a conversation. Point your camera at art or objects for instant identification. Walk near a building and GPS triggers its story. Cities are downloadable packs with pre-generated content so most interactions work offline.
 
+## Architecture
+
+<p align="center">
+  <img src="pics/architecture.png" alt="LocalLore Infrastructure Architecture" width="100%"/>
+</p>
+
+> Full system architecture — iOS app, FastAPI backend, Anthropic AI, data stores, pack builder pipeline, and CI/CD. Most interactions stay on-device; the backend is only called on cache misses or follow-up chat.
+
+## App Interface
+
+<p align="center">
+  <img src="pics/mobile-ui.png" alt="LocalLore Mobile App Interface" width="100%"/>
+</p>
+
+> Three core screens: **Camera** (identify artwork by pointing your phone), **Map** (GPS-triggered POI stories), and **Chat** (AI-powered follow-up questions about any identified item).
+
 ## How It Works
 
 1. **Camera identification** — Snap a photo of a painting, sculpture, or landmark. The app matches it locally via CLIP embeddings; on miss, the backend calls Claude Sonnet vision.
@@ -112,5 +128,7 @@ cd ../pack_builder && ruff check scripts/
 ## Documentation
 
 - [Architecture](docs/architecture.md)
+- [Infrastructure Diagram](pics/architecture.png)
+- [Mobile UI Mockup](pics/mobile-ui.png)
 - [API Reference](docs/api.md)
 - [Pack Builder Guide](pack_builder/README.md)
