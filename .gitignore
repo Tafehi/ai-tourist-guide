@@ -244,5 +244,12 @@ DerivedData/
 .build/
 Package.resolved
 
+# === Terraform ===
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfplan
+.terraform.lock.hcl
+
 # === macOS ===
 .DS_Store

@@ -1,12 +1,14 @@
-FROM python:3.11-slim
+FROM public.ecr.aws/lambda/python:3.11
 
-WORKDIR /app
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /usr/local/bin/uv
 
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+COPY pyproject.toml uv.lock ./
+RUN uv export --frozen --no-dev --no-hashes --no-emit-project -o requirements.txt && \
+    pip install --no-cache-dir -r requirements.txt -t "${LAMBDA_TASK_ROOT}" && \
+    rm requirements.txt
 
-COPY app/ ./app/
+COPY src/ ./src/
 
-EXPOSE 8000
+ENV PYTHONPATH=/var/task/src
+CMD ["app.main.handler"]
 
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
