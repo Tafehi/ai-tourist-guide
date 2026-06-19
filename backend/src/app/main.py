@@ -20,7 +20,7 @@ class SecurityHeadersMiddleware(BaseHTTPMiddleware):
 
 
 app = FastAPI(
-    title="AI Suggestion App",
+    title="TripCraft AI",
     version="0.1.0",
     description="AI-powered personalized suggestion generator",
     docs_url=None,

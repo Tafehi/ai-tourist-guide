@@ -3,7 +3,7 @@ provider "aws" {
 
   default_tags {
     tags = {
-      Project     = "ai-suggestion-app"
+      Project     = "tripcraft-ai"
       Environment = var.environment
       ManagedBy   = "terraform"
     }

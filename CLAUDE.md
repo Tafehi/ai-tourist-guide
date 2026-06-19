@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-AI Suggestion App — serverless backend on AWS (Lambda + API Gateway + DynamoDB + ECR) with an iOS client (SwiftUI). Deployed via Terraform and GitHub Actions.
+TripCraft AI — serverless backend on AWS (Lambda + API Gateway + DynamoDB + ECR) with an iOS client (SwiftUI). Deployed via Terraform and GitHub Actions.
 
 ## Architecture
 
@@ -39,8 +39,8 @@ AI Suggestion App — serverless backend on AWS (Lambda + API Gateway + DynamoDB
 ## Terraform Structure
 
 Two separate Terraform root modules with **independent S3 state files**:
-- `terraform-ecr/` → `s3://fvc-terraform-state-bucket-dev/ai-suggestion-app/ecr/terraform.tfstate`
-- `terraform/` → `s3://fvc-terraform-state-bucket-dev/ai-suggestion-app/terraform.tfstate`
+- `terraform-ecr/` → `s3://fvc-terraform-state-bucket-dev/tripcraft-ai/ecr/terraform.tfstate`
+- `terraform/` → `s3://fvc-terraform-state-bucket-dev/tripcraft-ai/terraform.tfstate`
 
 The main module references ECR via `data "aws_ecr_repository"` (read-only lookup), NOT as a managed resource.
 
@@ -129,9 +129,9 @@ cd backend && uv run python -m pytest    # Run tests (NOT bare pytest — venv r
 cd backend && ruff check --fix . && ruff format .  # Lint/Format (run before commit)
 
 # iOS
-cd ios && xcodebuild build -scheme AISuggestionApp -destination 'platform=iOS Simulator,name=iPhone 16,OS=18.2' CODE_SIGNING_ALLOWED=NO
-cd ios && xcodebuild test -scheme AISuggestionApp -destination 'platform=iOS Simulator,name=iPhone 16,OS=18.2' CODE_SIGNING_ALLOWED=NO
-cd ios && swiftlint lint --strict AISuggestionApp/  # Lint (requires: brew install swiftlint)
+cd ios && xcodebuild build -scheme TripCraftAI -destination 'platform=iOS Simulator,name=iPhone 16,OS=18.2' CODE_SIGNING_ALLOWED=NO
+cd ios && xcodebuild test -scheme TripCraftAI -destination 'platform=iOS Simulator,name=iPhone 16,OS=18.2' CODE_SIGNING_ALLOWED=NO
+cd ios && swiftlint lint --strict TripCraftAI/  # Lint (requires: brew install swiftlint)
 ```
 
 ## Environment
@@ -156,13 +156,13 @@ cd ios && swiftlint lint --strict AISuggestionApp/  # Lint (requires: brew insta
 
 ### Credits System
 - 1 free credit on first request
-- Products: `com.aisuggestion.trip.1` (1), `.trip.3` (3), `.trip.10` (10)
+- Products: `com.tripcraft.trip.1` (1), `.trip.3` (3), `.trip.10` (10)
 - Transaction replay prevention via DynamoDB conditional writes
 
 ## iOS Project Structure (`ios/`)
 
 ```
-AISuggestionApp/
+TripCraftAI/
 ├── App/                    # Entry point + config
 ├── Models/                 # Codable request/response models
 ├── Services/               # APIClient, Keychain, DeviceID, StoreKit, SpeechRecognizer

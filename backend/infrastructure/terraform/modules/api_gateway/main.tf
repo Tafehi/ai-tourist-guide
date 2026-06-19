@@ -1,6 +1,6 @@
 resource "aws_api_gateway_rest_api" "this" {
-  name        = "ai-suggestion-app-${var.environment}"
-  description = "AI Suggestion App API"
+  name        = "tripcraft-ai-${var.environment}"
+  description = "TripCraft AI API"
 
   endpoint_configuration {
     types = ["REGIONAL"]
@@ -150,7 +150,7 @@ resource "aws_api_gateway_method_settings" "all" {
 # ── Logging ──────────────────────────────────────────────────────────
 
 resource "aws_cloudwatch_log_group" "this" {
-  name              = "/aws/apigateway/ai-suggestion-app-${var.environment}"
+  name              = "/aws/apigateway/tripcraft-ai-${var.environment}"
   retention_in_days = 7
 }
 

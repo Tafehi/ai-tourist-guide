@@ -19,9 +19,9 @@ class CreditsService:
     """
 
     PRODUCT_CREDITS = {
-        "com.aisuggestion.trip.1": 1,
-        "com.aisuggestion.trip.3": 3,
-        "com.aisuggestion.trip.10": 10,
+        "com.tripcraft.trip.1": 1,
+        "com.tripcraft.trip.3": 3,
+        "com.tripcraft.trip.10": 10,
     }
 
     def __init__(self):

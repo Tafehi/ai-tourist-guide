@@ -37,8 +37,8 @@ resource "random_password" "api_key" {
 }
 
 resource "aws_secretsmanager_secret" "api_key" {
-  name        = "ai-suggestion-app-${var.environment}-api-key"
-  description = "API key for ai-suggestion-app request authentication"
+  name        = "tripcraft-ai-${var.environment}-api-key"
+  description = "API key for tripcraft-ai request authentication"
 }
 
 resource "aws_secretsmanager_secret_version" "api_key" {

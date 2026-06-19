@@ -1,5 +1,5 @@
 resource "aws_dynamodb_table" "itineraries" {
-  name         = "ai-suggestion-app-Itineraries"
+  name         = "tripcraft-ai-Itineraries"
   billing_mode = "PAY_PER_REQUEST"
   hash_key     = "pk"
   range_key    = "sk"
@@ -22,7 +22,7 @@ resource "aws_dynamodb_table" "itineraries" {
 }
 
 resource "aws_dynamodb_table" "credits" {
-  name         = "ai-suggestion-app-Credits"
+  name         = "tripcraft-ai-Credits"
   billing_mode = "PAY_PER_REQUEST"
   hash_key     = "pk"
   range_key    = "sk"

@@ -25,7 +25,7 @@ data "archive_file" "rotation_lambda" {
 }
 
 resource "aws_iam_role" "rotation_lambda" {
-  name                 = "ai-suggestion-app-secret-rotation-${var.environment}"
+  name                 = "tripcraft-ai-secret-rotation-${var.environment}"
   path                 = "/service-role/"
   permissions_boundary = "arn:aws:iam::${data.aws_caller_identity.current.account_id}:policy/${var.permissions_boundary}"
 
@@ -66,7 +66,7 @@ resource "aws_iam_role_policy_attachment" "rotation_lambda_basic" {
 }
 
 resource "aws_lambda_function" "rotation" {
-  function_name    = "ai-suggestion-app-secret-rotation-${var.environment}"
+  function_name    = "tripcraft-ai-secret-rotation-${var.environment}"
   role             = aws_iam_role.rotation_lambda.arn
   handler          = "rotate.handler"
   runtime          = "python3.11"

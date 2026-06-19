@@ -11,8 +11,8 @@ _CACHE_TTL_SECONDS = 300
 class Settings(BaseSettings):
     aws_region: str = "eu-west-1"
     api_key_secret_name: str = ""
-    dynamodb_table_itineraries: str = "ai-suggestion-app-Itineraries"
-    dynamodb_table_credits: str = "ai-suggestion-app-Credits"
+    dynamodb_table_itineraries: str = "tripcraft-ai-Itineraries"
+    dynamodb_table_credits: str = "tripcraft-ai-Credits"
     environment: str = "development"
     free_credits: int = 1
     unlimited_test_credits: bool = False

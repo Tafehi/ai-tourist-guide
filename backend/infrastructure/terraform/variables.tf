@@ -15,13 +15,13 @@ variable "environment" {
 
 variable "ecr_repository_name" {
   type        = string
-  default     = "ai-suggestion-app"
+  default     = "tripcraft-ai"
   description = "Name of the ECR repository for the Lambda container image"
 }
 
 variable "lambda_function_name" {
   type        = string
-  default     = "ai-suggestion-app"
+  default     = "tripcraft-ai"
   description = "Name of the Lambda function"
 }
 
@@ -41,11 +41,7 @@ variable "image_tag" {
   description = "Docker image tag for the Lambda container"
 }
 
-variable "permissions_boundary" {
-  type        = string
-  default     = "core/oidc-tooling-github-permissionboundarypolicy"
-  description = "Permissions boundary policy name for IAM roles"
-}
+
 
 variable "google_maps_secret_name" {
   type        = string

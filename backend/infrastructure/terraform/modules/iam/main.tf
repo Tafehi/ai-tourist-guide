@@ -1,7 +1,7 @@
 data "aws_caller_identity" "current" {}
 
 resource "aws_iam_role" "lambda_exec" {
-  name                 = "ai-suggestion-app-lambda-${var.environment}"
+  name                 = "tripcraft-ai-lambda-${var.environment}"
   path                 = "/service-role/"
   permissions_boundary = "arn:aws:iam::${data.aws_caller_identity.current.account_id}:policy/${var.permissions_boundary}"
 

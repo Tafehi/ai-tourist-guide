@@ -1,5 +1,5 @@
 [project]
-name = "ai-suggestion-app-backend"
+name = "tripcraft-ai-backend"
 version = "0.1.0"
 description = "AI-powered suggestion generator backend"
 readme = "README.md"

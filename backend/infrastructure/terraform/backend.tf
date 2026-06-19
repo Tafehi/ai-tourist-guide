@@ -14,7 +14,7 @@ terraform {
 
   backend "s3" {
     bucket       = "fvc-terraform-state-bucket-dev"
-    key          = "ai-suggestion-app/terraform.tfstate"
+    key          = "tripcraft-ai/terraform.tfstate"
     region       = "eu-west-1"
     use_lockfile = true
   }

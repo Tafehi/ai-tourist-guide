@@ -15,6 +15,6 @@ variable "environment" {
 
 variable "repository_name" {
   type        = string
-  default     = "ai-suggestion-app"
+  default     = "tripcraft-ai"
   description = "Name of the ECR repository for the Lambda container image"
 }
