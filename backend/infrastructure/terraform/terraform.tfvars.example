@@ -1,0 +1,6 @@
+aws_region           = "eu-west-1"
+environment          = "production"
+ecr_repository_name  = "ai-suggestion-app"
+lambda_function_name = "ai-suggestion-app"
+lambda_memory_size   = 512
+lambda_timeout       = 60
