@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		652EB7F82FBB28D500D4B98B /* AppAttestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652EB7F72FBB28D500D4B98B /* AppAttestService.swift */; };
+		A10001 /* AISuggestionAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10001 /* AISuggestionAppApp.swift */; };
+		A10002 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10002 /* AppConfiguration.swift */; };
+		A10003 /* TripRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10003 /* TripRequest.swift */; };
+		A10004 /* Itinerary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10004 /* Itinerary.swift */; };
+		A10005 /* CreditsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10005 /* CreditsResponse.swift */; };
+		A10006 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10006 /* APIError.swift */; };
+		A10007 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10007 /* APIClient.swift */; };
+		A10008 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10008 /* KeychainService.swift */; };
+		A10009 /* DeviceIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10009 /* DeviceIdentifier.swift */; };
+		A10010 /* StoreKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10010 /* StoreKitService.swift */; };
+		A10011 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10011 /* SpeechRecognizer.swift */; };
+		A10012 /* APIKeyObfuscation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10012 /* APIKeyObfuscation.swift */; };
+		A10013 /* CertificatePinning.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10013 /* CertificatePinning.swift */; };
+		A10014 /* IntegrityCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10014 /* IntegrityCheck.swift */; };
+		A10015 /* InputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10015 /* InputValidator.swift */; };
+		A10016 /* TripFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10016 /* TripFormViewModel.swift */; };
+		A10017 /* CreditsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10017 /* CreditsViewModel.swift */; };
+		A10018 /* TripFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10018 /* TripFormView.swift */; };
+		A10019 /* ItineraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10019 /* ItineraryView.swift */; };
+		A10020 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10020 /* CreditsView.swift */; };
+		A10021 /* ActivityCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10021 /* ActivityCard.swift */; };
+		A10022 /* DaySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10022 /* DaySection.swift */; };
+		A10023 /* CreditBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10023 /* CreditBadge.swift */; };
+		A10024 /* VoiceInputButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10024 /* VoiceInputButton.swift */; };
+		A10025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10025 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		652EB7F72FBB28D500D4B98B /* AppAttestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAttestService.swift; sourceTree = "<group>"; };
+		B10000 /* AISuggestionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AISuggestionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10001 /* AISuggestionAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AISuggestionAppApp.swift; sourceTree = "<group>"; };
+		B10002 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		B10003 /* TripRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripRequest.swift; sourceTree = "<group>"; };
+		B10004 /* Itinerary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Itinerary.swift; sourceTree = "<group>"; };
+		B10005 /* CreditsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsResponse.swift; sourceTree = "<group>"; };
+		B10006 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		B10007 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		B10008 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		B10009 /* DeviceIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceIdentifier.swift; sourceTree = "<group>"; };
+		B10010 /* StoreKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitService.swift; sourceTree = "<group>"; };
+		B10011 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		B10012 /* APIKeyObfuscation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeyObfuscation.swift; sourceTree = "<group>"; };
+		B10013 /* CertificatePinning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificatePinning.swift; sourceTree = "<group>"; };
+		B10014 /* IntegrityCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrityCheck.swift; sourceTree = "<group>"; };
+		B10015 /* InputValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputValidator.swift; sourceTree = "<group>"; };
+		B10016 /* TripFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripFormViewModel.swift; sourceTree = "<group>"; };
+		B10017 /* CreditsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsViewModel.swift; sourceTree = "<group>"; };
+		B10018 /* TripFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripFormView.swift; sourceTree = "<group>"; };
+		B10019 /* ItineraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItineraryView.swift; sourceTree = "<group>"; };
+		B10020 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		B10021 /* ActivityCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCard.swift; sourceTree = "<group>"; };
+		B10022 /* DaySection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySection.swift; sourceTree = "<group>"; };
+		B10023 /* CreditBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditBadge.swift; sourceTree = "<group>"; };
+		B10024 /* VoiceInputButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceInputButton.swift; sourceTree = "<group>"; };
+		B10025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B10026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F10001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		G10000 = {
+			isa = PBXGroup;
+			children = (
+				G10001 /* AISuggestionApp */,
+				B10000 /* AISuggestionApp.app */,
+			);
+			sourceTree = "<group>";
+		};
+		G10001 /* AISuggestionApp */ = {
+			isa = PBXGroup;
+			children = (
+				G10002 /* App */,
+				G10003 /* Models */,
+				G10004 /* Services */,
+				G10005 /* ViewModels */,
+				G10006 /* Views */,
+				G10007 /* Utilities */,
+				B10025 /* Assets.xcassets */,
+				652EB7F72FBB28D500D4B98B /* AppAttestService.swift */,
+				B10026 /* Info.plist */,
+			);
+			path = AISuggestionApp;
+			sourceTree = "<group>";
+		};
+		G10002 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B10001 /* AISuggestionAppApp.swift */,
+				B10002 /* AppConfiguration.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		G10003 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B10003 /* TripRequest.swift */,
+				B10004 /* Itinerary.swift */,
+				B10005 /* CreditsResponse.swift */,
+				B10006 /* APIError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		G10004 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B10007 /* APIClient.swift */,
+				B10008 /* KeychainService.swift */,
+				B10009 /* DeviceIdentifier.swift */,
+				B10010 /* StoreKitService.swift */,
+				B10011 /* SpeechRecognizer.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		G10005 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B10016 /* TripFormViewModel.swift */,
+				B10017 /* CreditsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		G10006 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B10018 /* TripFormView.swift */,
+				B10019 /* ItineraryView.swift */,
+				B10020 /* CreditsView.swift */,
+				G10008 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		G10007 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B10012 /* APIKeyObfuscation.swift */,
+				B10013 /* CertificatePinning.swift */,
+				B10014 /* IntegrityCheck.swift */,
+				B10015 /* InputValidator.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		G10008 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B10021 /* ActivityCard.swift */,
+				B10022 /* DaySection.swift */,
+				B10023 /* CreditBadge.swift */,
+				B10024 /* VoiceInputButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		T10001 /* AISuggestionApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C10003 /* Build configuration list for PBXNativeTarget "AISuggestionApp" */;
+			buildPhases = (
+				S10001 /* Sources */,
+				F10001 /* Frameworks */,
+				R10001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AISuggestionApp;
+			productName = AISuggestionApp;
+			productReference = B10000 /* AISuggestionApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		P10001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 2640;
+				ORGANIZATIONNAME = "AI Suggestion";
+				TargetAttributes = {
+					T10001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = C10001 /* Build configuration list for PBXProject "AISuggestionApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = G10000;
+			productRefGroup = G10000;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				T10001 /* AISuggestionApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		R10001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10025 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		S10001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10001 /* AISuggestionAppApp.swift in Sources */,
+				A10002 /* AppConfiguration.swift in Sources */,
+				A10003 /* TripRequest.swift in Sources */,
+				A10004 /* Itinerary.swift in Sources */,
+				A10005 /* CreditsResponse.swift in Sources */,
+				A10006 /* APIError.swift in Sources */,
+				A10007 /* APIClient.swift in Sources */,
+				A10008 /* KeychainService.swift in Sources */,
+				A10009 /* DeviceIdentifier.swift in Sources */,
+				A10010 /* StoreKitService.swift in Sources */,
+				A10011 /* SpeechRecognizer.swift in Sources */,
+				A10012 /* APIKeyObfuscation.swift in Sources */,
+				A10013 /* CertificatePinning.swift in Sources */,
+				A10014 /* IntegrityCheck.swift in Sources */,
+				A10015 /* InputValidator.swift in Sources */,
+				A10016 /* TripFormViewModel.swift in Sources */,
+				A10017 /* CreditsViewModel.swift in Sources */,
+				652EB7F82FBB28D500D4B98B /* AppAttestService.swift in Sources */,
+				A10018 /* TripFormView.swift in Sources */,
+				A10019 /* ItineraryView.swift in Sources */,
+				A10020 /* CreditsView.swift in Sources */,
+				A10021 /* ActivityCard.swift in Sources */,
+				A10022 /* DaySection.swift in Sources */,
+				A10023 /* CreditBadge.swift in Sources */,
+				A10024 /* VoiceInputButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C10D01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = JBY33NWZFD;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C10D02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AISuggestionApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "AI Trip";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aisuggestion.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C10R01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = JBY33NWZFD;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C10R02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AISuggestionApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "AI Trip";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aisuggestion.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C10001 /* Build configuration list for PBXProject "AISuggestionApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C10D01 /* Debug */,
+				C10R01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C10003 /* Build configuration list for PBXNativeTarget "AISuggestionApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C10D02 /* Debug */,
+				C10R02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = P10001 /* Project object */;
+}
